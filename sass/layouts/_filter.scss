@@ -1,0 +1,39 @@
+.filter {
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.filter__content {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+.filter__button {
+  width: auto;
+  padding: 6px 22px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  letter-spacing: 0.06em;
+  display: flex;
+  align-items: start;
+  text-align: center;
+  color: var(--title-color);
+  background: var(--light-bg-color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: color var(--animation), background-color var(--animation);
+}
+.filter__item:not(:last-child) {
+  margin-right: 8px;
+}
+.filter__link:hover,
+.filter__link:focus .filter__link:active {
+  text-decoration: none;
+  color: var(--dark-bg-text-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}

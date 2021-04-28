@@ -1,0 +1,9 @@
+.menu {
+  display: inline-flex;
+}
+.menu__item:not(:last-child) {
+  margin-right: 50px;
+}
+.menu__link {
+  position: relative;
+}

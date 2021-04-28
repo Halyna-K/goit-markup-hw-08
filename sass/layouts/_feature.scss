@@ -1,0 +1,32 @@
+.feature {
+  padding-bottom: 0;
+}
+
+.feature__item {
+  padding: 25px 100px;
+}
+.feature__icon {
+  width: 70px;
+  height: 70px;
+}
+.feature__item,
+.feature__icon::before {
+  display: block;
+  content: "";
+  width: 270px;
+  height: 120px;
+  background-color: var(--light-bg-color);
+  border-radius: 4px;
+}
+.feature__view {
+  margin-top: 30px;
+}
+.feature__title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  line-height: 1.143;
+  text-transform: uppercase;
+}
+.feature__text {
+  margin-bottom: 0;
+}
