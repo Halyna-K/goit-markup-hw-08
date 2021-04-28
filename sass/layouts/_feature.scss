@@ -1,6 +1,17 @@
 .feature {
   padding-bottom: 0;
 }
+.feature__content {
+  --grid__item: 1;
+
+  @media screen and (min-width: 768px) {
+    --grid__item: 2;
+  }
+
+  @media screen and (min-width: 1600px) {
+    --grid__item: 4;
+  }
+}
 
 .feature__item {
   padding: 25px 100px;
