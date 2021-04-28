@@ -1,7 +1,15 @@
 .projects {
-  --grid__item: 3;
+  --grid__item: 1;
   font-size: 16px;
   line-height: 1.875;
+
+  @media screen and (min-width: 768px) {
+    --grid__item: 2;
+  }
+
+  @media screen and (min-width: 1600px) {
+    --grid__item: 3;
+  }
 }
 .projects__title {
   margin-bottom: 4px;
