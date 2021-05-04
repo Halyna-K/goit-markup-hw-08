@@ -21,6 +21,10 @@
 .header-contacts {
   color: var(--main-text-color);
   display: inline-flex;
+
+  @media screen and (max-width: 767.98px) {
+    display: none;
+  }
 }
 .header-contacts__item:not(:last-child) {
   margin-right: 50px;

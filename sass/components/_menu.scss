@@ -7,3 +7,9 @@
 .menu__link {
   position: relative;
 }
+
+@media screen and (max-width: 767.98px) {
+  .menu-desktop {
+    display: none;
+  }
+}

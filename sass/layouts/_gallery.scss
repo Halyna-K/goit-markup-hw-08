@@ -1,4 +1,7 @@
 .gallery {
+  @media screen and (max-width: 1199.98px) {
+    display: none;
+  }
 }
 .gallery__item {
   --grid__item: 3;

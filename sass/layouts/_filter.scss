@@ -8,9 +8,16 @@
   display: flex;
   justify-content: center;
   padding-bottom: 50px;
+
+  @media screen and (max-width: 450px) {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: start;
+  }
 }
 .filter__button {
   width: auto;
+  height: 38px;
   padding: 6px 22px;
   font-weight: 500;
   font-size: 16px;

@@ -25,7 +25,7 @@
           <a class="link logo header--logo logo--part2" href="/" lang="en">
             <span class="logo--part1">Web</span>Studio</a
           >
-          <ul class="list menu header">
+          <ul class="list menu menu-desktop header">
             <li class="menu__item">
               <a class="link menu__link current" href="./index.html">Студия</a>
             </li>
@@ -59,8 +59,102 @@
             >
           </li>
         </ul>
+
+        <button class="mobile-menu-btn" data-menu-button>
+          <svg class="mobile-menu-icon">
+            <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use>
+            <use class="icon-close" href="./images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
       </div>
     </header>
+
+    <!-- <div class="mobile-overlay"> -->
+    <div class="mobile-menu" data-menu>
+      <ul class="list menu">
+        <li class="menu__item">
+          <a class="link menu__link current" href="./index.html">Студия</a>
+        </li>
+        <li class="menu__item">
+          <a class="link menu__link" href="./portfolio.html">Портфолио</a>
+        </li>
+        <li class="menu__item">
+          <a class="link menu__link" href="#contacts">Контакты</a>
+        </li>
+      </ul>
+      <ul class="list header-contacts">
+        <li class="header-contacts__item">
+          <a
+            class="link header-contacts__link"
+            href="mailto:info@devstudio.com"
+          >
+            <svg class="icon">
+              <use href="./images/sprite.svg#icon-mail"></use>
+            </svg>
+            info@devstudio.com</a
+          >
+        </li>
+        <li class="header-contacts__item">
+          <a class="link header-contacts__link" href="tel:+380961111111">
+            <svg class="icon">
+              <use href="./images/sprite.svg#icon-phone"></use>
+            </svg>
+            +38 096 111 11 11</a
+          >
+        </li>
+      </ul>
+      <!-- <ul class="list social-icons">
+          <li class="social-icons__item">
+            <a
+              href=""
+              class="social-icons__link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="icon">
+                <use href="./images/sprite.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-icons__item">
+            <a
+              href=""
+              class="social-icons__link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="icon">
+                <use href="./images/sprite.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-icons__item">
+            <a
+              href=""
+              class="social-icons__link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="icon">
+                <use href="./images/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-icons__item">
+            <a
+              href=""
+              class="social-icons__link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="icon">
+                <use href="./images/sprite.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul> -->
+    </div>
+    <!-- </div> -->
 
     <!-- main -->
     <main>
@@ -77,7 +171,7 @@
       </section> -->
 
       <!-- section feature -->
-      <section class="section feature">
+      <!-- <section class="section feature">
         <div class="container feature__content">
           <h2 class="visually-hidden">Особенности</h2>
           <ul class="list grid">
@@ -131,7 +225,7 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- section gallery -->
       <!-- <section class="section gallery">
@@ -166,7 +260,7 @@
       </section> -->
 
       <!-- section team -->
-      <section class="section team--bg-color">
+      <!-- <section class="section team--bg-color">
         <figure class="container">
           <figcaption><h2 class="section__title">Наша команда</h2></figcaption>
           <ul class="list grid">
@@ -400,10 +494,10 @@
             </li>
           </ul>
         </figure>
-      </section>
+      </section> -->
 
       <!-- section clients -->
-      <section class="section">
+      <!-- <section class="section">
         <div class="container clients">
           <h2 class="section__title">Постоянные клиенты</h2>
           <ul class="list grid">
@@ -481,7 +575,7 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
 
     <!-- footer-->
@@ -689,6 +783,7 @@
         </form>
       </div>
     </div> -->
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
