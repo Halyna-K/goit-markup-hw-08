@@ -7,12 +7,13 @@
 .filter__content {
   display: flex;
   justify-content: center;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
 
-  @media screen and (max-width: 450px) {
-    display: inline-flex;
+  @media screen and (max-width: 480px) {
     flex-wrap: wrap;
-    justify-content: start;
+    justify-content: flex-start;
+    align-content: space-between;
+    padding-bottom: 30px;
   }
 }
 .filter__button {
@@ -35,6 +36,9 @@
 }
 .filter__item:not(:last-child) {
   margin-right: 8px;
+  @media screen and (max-width: 480px) {
+    margin-bottom: 15px;
+  }
 }
 .filter__link:hover,
 .filter__link:focus .filter__link:active {

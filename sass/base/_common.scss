@@ -24,7 +24,7 @@ p {
 }
 img {
   display: block;
-  min-width: 100%;
+  max-width: 100%;
   height: auto;
 }
 address {
@@ -53,7 +53,6 @@ address {
 
 .current {
   color: var(--accent-color);
-
   &::after {
     content: "";
     position: absolute;
@@ -75,4 +74,10 @@ address {
 .dark-bg {
   background-color: var(--dark-bg-color);
   color: var(--dark-bg-text-color);
+}
+.header,
+.section__title,
+.feature__title,
+.team__title {
+  color: var(--title-color);
 }

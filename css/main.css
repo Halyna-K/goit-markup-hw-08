@@ -307,7 +307,7 @@ p {
 
 img {
   display: block;
-  min-width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -363,6 +363,13 @@ address {
   color: var(--dark-bg-text-color);
 }
 
+.header,
+.section__title,
+.feature__title,
+.team__title {
+  color: var(--title-color);
+}
+
 .container {
   padding-right: 15px;
   padding-left: 15px;
@@ -370,19 +377,19 @@ address {
   margin-left: auto;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   .container {
-    max-width: 320px;
+    max-width: 480px;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 767.98px) {
   .container {
     max-width: 768px;
   }
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
   }
@@ -470,7 +477,8 @@ address {
   top: 0;
   right: -100%;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-between;
   z-index: 100;
   width: 100%;
   max-width: 480px;
@@ -498,13 +506,8 @@ address {
   margin-bottom: 32px;
 }
 
-.mobile-overlay {
-  width: 100%;
-  height: 100vh;
-}
-
-.memu__link .current::after {
-  display: none;
+.mobile-menu .current::after {
+  background-color: transparent;
 }
 
 .menu-contacts__phone {
@@ -522,7 +525,7 @@ address {
 }
 
 .menu-social {
-  display: inline-flex;
+  display: flex;
   margin-top: auto;
   font-size: 18px;
   line-height: 1.22;
@@ -538,11 +541,15 @@ address {
 
 .menu-social__item:not(:last-child) {
   margin-right: 20px;
+  position: relative;
 }
 
 .menu-social__item:not(:last-child)::after {
   content: "";
   position: absolute;
+  top: 50%;
+  left: 100%;
+  width: 22px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   transform: rotate(90deg);
 }
@@ -619,7 +626,7 @@ address {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
-  max-width: 530px;
+  max-width: 450px;
   min-height: 580px;
   padding: 40px 30px;
   border-radius: 4px;
@@ -629,6 +636,12 @@ address {
 
 .is-hidden .modal {
   transform: translate(100%, 100%) scale(0.2);
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    max-width: 530px;
+  }
 }
 
 .modal__close {
@@ -677,10 +690,6 @@ address {
 
 .modal__button:hover, .modal__button:focus {
   background-color: #188ce8;
-}
-
-.modal-form {
-  display: inline-block;
 }
 
 .modal-form__field {
@@ -820,6 +829,13 @@ address {
   padding-bottom: 94px;
 }
 
+@media screen and (max-width: 768px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
 .section__title {
   font-weight: 700;
   font-size: 36px;
@@ -905,9 +921,39 @@ address {
   align-items: center;
   justify-content: center;
   background: rgba(47, 48, 58, 0.4);
-  background-image: url(../images/hero/bg.png);
+  background-image: url(../images/hero/mobile/bg-mobile.png);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/hero/mobile/bg@2x-mobile.png);
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .hero {
+    background-image: url(../images/hero/tablet/bg-tablet.png);
+  }
+}
+
+@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/hero/tablet/bg@2x-tablet.png);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: url(../images/hero/desktop/bg-desktop.png);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/hero/desktop/bg@2x-desktop.png);
+  }
 }
 
 .hero__content {
@@ -1247,14 +1293,15 @@ address {
 .filter__content {
   display: flex;
   justify-content: center;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 480px) {
   .filter__content {
-    display: inline-flex;
     flex-wrap: wrap;
-    justify-content: start;
+    justify-content: flex-start;
+    align-content: space-between;
+    padding-bottom: 30px;
   }
 }
 
@@ -1279,6 +1326,12 @@ address {
 
 .filter__item:not(:last-child) {
   margin-right: 8px;
+}
+
+@media screen and (max-width: 480px) {
+  .filter__item:not(:last-child) {
+    margin-bottom: 15px;
+  }
 }
 
 .filter__link:hover,
@@ -1377,12 +1430,5 @@ address {
 
 .projects__item {
   padding: 20px 24px;
-}
-
-.header,
-.section__title,
-.feature__title,
-.team__title {
-  color: var(--title-color);
 }
 /*# sourceMappingURL=main.css.map */
