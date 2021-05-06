@@ -19,7 +19,7 @@
 
   <body>
     <!--header -->
-    <header class="header header--line">
+    <!-- <header class="header header--line">
       <div class="container">
         <nav class="navigation">
           <a class="link logo header--logo logo--part2" href="/" lang="en">
@@ -67,10 +67,10 @@
           </svg>
         </button>
       </div>
-    </header>
+    </header> -->
 
     <!-- <div class="mobile-overlay"> -->
-    <div class="mobile-menu" data-menu>
+    <!-- <div class="mobile-menu" data-menu>
       <ul class="list menu">
         <li class="menu__item">
           <a class="link menu__link current" href="./index.html">Студия</a>
@@ -82,84 +82,63 @@
           <a class="link menu__link" href="#contacts">Контакты</a>
         </li>
       </ul>
-      <ul class="list header-contacts">
-        <li class="header-contacts__item">
-          <a
-            class="link header-contacts__link"
-            href="mailto:info@devstudio.com"
-          >
-            <svg class="icon">
-              <use href="./images/sprite.svg#icon-mail"></use>
-            </svg>
-            info@devstudio.com</a
-          >
-        </li>
-        <li class="header-contacts__item">
-          <a class="link header-contacts__link" href="tel:+380961111111">
-            <svg class="icon">
-              <use href="./images/sprite.svg#icon-phone"></use>
-            </svg>
+      <ul class="list menu-contacts">
+        <li class="menu__item">
+          <a class="link menu-contacts__phone" href="tel:+380961111111">
             +38 096 111 11 11</a
           >
         </li>
+        <li class="menu__item">
+          <a class="link menu-contacts__mail" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
       </ul>
-      <!-- <ul class="list social-icons">
-          <li class="social-icons__item">
-            <a
-              href=""
-              class="social-icons__link"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <svg class="icon">
-                <use href="./images/sprite.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-icons__item">
-            <a
-              href=""
-              class="social-icons__link"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <svg class="icon">
-                <use href="./images/sprite.svg#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-icons__item">
-            <a
-              href=""
-              class="social-icons__link"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <svg class="icon">
-                <use href="./images/sprite.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-icons__item">
-            <a
-              href=""
-              class="social-icons__link"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <svg class="icon">
-                <use href="./images/sprite.svg#icon-linkedin"></use>
-              </svg>
-            </a>
-          </li>
-        </ul> -->
-    </div>
+      <ul class="list menu-social">
+        <li class="menu-social__item">
+          <a
+            href="#instagram"
+            class="link"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Instagram
+          </a>
+        </li>
+        <li class="menu-social__item">
+          <a
+            href="#twitter"
+            class="link"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Twitter
+          </a>
+        </li>
+        <li class="menu-social__item">
+          <a
+            href="#facebook"
+            class="link"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Facebook</a
+          >
+        </li>
+        <li class="menu-social__item">
+          <a
+            href="#linkedin"
+            class="link"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn</a
+          >
+        </li>
+      </ul>
+    </div> -->
     <!-- </div> -->
 
     <!-- main -->
     <main>
       <!--section hero-->
-      <!-- <section class="hero dark-bg">
+      <section class="hero dark-bg">
         <div class="container hero__content">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
           <div class="hero__button">
@@ -168,7 +147,7 @@
             </button>
           </div>
         </div>
-      </section> -->
+      </section>
 
       <!-- section feature -->
       <!-- <section class="section feature">
@@ -582,8 +561,8 @@
     <!-- <footer class="dark-bg">
       <div class="container footer" id="contacts">
         <ul class="list grid footer-list">
-          <li class="grid__item">
-            <a class="link logo footer-list__title" href="/" lang="en"
+          <li class="grid__item footer-list__item">
+            <a class="link logo" href="/" lang="en"
               ><span class="logo--part1">Web</span>Studio</a
             >
             <address>
@@ -611,11 +590,9 @@
               </ul>
             </address>
           </li>
-          <li class="grid__item">
-            <h3 class="footer-social__title footer-list__title">
-              присоединяйтесь
-            </h3>
-            <ul class="list social-icons footer-social">
+          <li class="grid__item footer-list__item">
+            <h3 class="footer__title">Присоединяйтесь</h3>
+            <ul class="list social-icons">
               <li class="social-icons__item">
                 <a
                   href=""
@@ -666,10 +643,8 @@
               </li>
             </ul>
           </li>
-          <li class="grid__item">
-            <h3 class="footer-form__title footer__title">
-              Подпишитесь на рассылку
-            </h3>
+          <li class="grid__item footer-list__item">
+            <h3 class="footer__title">Подпишитесь на рассылку</h3>
             <form class="footer-form" for="user_email">
               <input
                 class="footer-form__email"

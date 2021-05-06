@@ -25,9 +25,14 @@
   @media screen and (max-width: 767.98px) {
     display: none;
   }
+  @media screen and (min-width: 767.98px) and (max-width: 1199.98px) {
+    flex-direction: column;
+  }
 }
 .header-contacts__item:not(:last-child) {
-  margin-right: 50px;
+  @media screen and (min-width: 1199.98px) {
+    margin-right: 50px;
+  }
 }
 .header-contacts__link {
   display: flex;
